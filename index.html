@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cérémonie des Lauréats 2025</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <nav aria-label="Navigation principale">
+        <div class="logo">🎓 Lauréats 2025</div>
+        <button
+          class="burger"
+          id="burger"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+        >
+          ☰
+        </button>
+        <div class="nav-links">
+          <a href="#about">À propos</a>
+          <a href="#agenda">Programme</a>
+          <a href="#tickets">Billets</a>
+          <a href="#gallery">Galerie</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu-dialog" role="dialog" aria-label="Menu mobile">
+          <button class="close-menu" id="closeMenu" aria-label="Fermer le menu">
+            ✕
+          </button>
+          <a href="#about" data-mobile-link>À propos</a>
+          <a href="#agenda" data-mobile-link>Programme</a>
+          <a href="#tickets" data-mobile-link>Billets</a>
+          <a href="#gallery" data-mobile-link>Galerie</a>
+          <a href="#contact" data-mobile-link>Contact</a>
+        </div>
+        <div class="mobile-menu-backdrop" id="menuBackdrop"></div>
+      </div>
+    </header>
+
+    <!-- Bannière -->
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Cérémonie des Lauréats 2025</h1>
+        <p>19 octobre 2025 • Kinshasa</p>
+        <div class="banner-buttons">
+          <a href="#form-laureat" class="btn">🎓 Billet Lauréat</a>
+          <a href="#form-invite" class="btn btn-secondary">👨‍👩‍👧‍👦 Billet Invité</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bouton flottant -->
+    <a href="#tickets" class="floating-btn">🎟️ Réserver</a>
+
+    <!-- À propos -->
+    <section id="about" class="fade-in">
+      <h2>À propos de l’événement</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            Venez célébrer la promotion 2025 lors de cette cérémonie unique. Une
+            journée mémorable pour les Lauréats et leurs familles.
+          </p>
+          <p>
+            Partagez la fierté, les émotions et les souvenirs de cette étape
+            importante.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1581092580499-0b3f29216f5f?auto=format&fit=crop&w=800&q=80"
+            alt="Cérémonie"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Programme -->
+    <section id="agenda" class="fade-in">
+      <h2>Programme</h2>
+      <ul class="timeline">
+        <li><strong>09:00</strong> Accueil des invités</li>
+        <li><strong>10:00</strong> Discours d’ouverture</li>
+        <li><strong>11:00</strong> Remise des diplômes</li>
+        <li><strong>12:30</strong> Photos et célébration</li>
+        <li><strong>14:00</strong> Cocktail et clôture</li>
+      </ul>
+    </section>
+
+    <!-- Billets -->
+    <section id="tickets" class="tickets fade-in">
+      <h2>Réservez votre billet</h2>
+      <p>
+        Choisissez votre type de billet et réservez pour paiement sur place.
+      </p>
+      <div class="ticket-options">
+        <div class="ticket-card">
+          <h3>🎓 Billet Lauréat</h3>
+          <p>Réservé aux étudiants diplômés.</p>
+          <a href="#form-laureat" class="btn-ticket">Réserver</a>
+        </div>
+        <div class="ticket-card">
+          <h3>👨‍👩‍👧‍👦 Billet Invité</h3>
+          <p>Pour parents et proches.</p>
+          <a href="#form-invite" class="btn-ticket">Réserver</a>
+        </div>
+      </div>
+
+      <!-- Formulaires -->
+      <div id="form-laureat" class="form-section">
+        <h3>Formulaire Billet Lauréat</h3>
+        <p>Le paiement se fera sur place.</p>
+        <iframe
+          class="form-frame"
+          src="https://forms.gle/XZWrW4jyjooftTSA8"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="form-actions">
+          <a
+            class="btn-ticket alt"
+            href="https://forms.gle/XZWrW4jyjooftTSA8"
+            target="_blank"
+            rel="noopener"
+            >Ouvrir dans un nouvel onglet</a
+          >
+        </div>
+      </div>
+
+      <div id="form-invite" class="form-section">
+        <h3>Formulaire Billet Invité</h3>
+        <p>Le paiement se fera sur place.</p>
+        <iframe
+          class="form-frame"
+          src="https://forms.gle/ytLLq5VYvqYrdfdRA"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="form-actions">
+          <a
+            class="btn-ticket alt"
+            href="https://forms.gle/ytLLq5VYvqYrdfdRA"
+            target="_blank"
+            rel="noopener"
+            >Ouvrir dans un nouvel onglet</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Galerie -->
+    <section id="gallery" class="fade-in">
+      <h2>Galerie</h2>
+      <div class="gallery-grid">
+        <img
+          src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=400&q=80"
+          alt="Photo1"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=400&q=80"
+          alt="Photo2"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1596496050660-48f7b1b9de8e?auto=format&fit=crop&w=400&q=80"
+          alt="Photo3"
+        />
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="fade-in">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <h3>Comment puis-je payer mon billet ?</h3>
+        <p>Le paiement se fera sur place lors de l’événement.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Peut-on réserver plusieurs billets ?</h3>
+        <p>
+          Oui, vous pouvez choisir la quantité souhaitée dans le formulaire.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <p>Email : contact@evenement.com</p>
+      <p>Téléphone : +243 854570512</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Cérémonie des Lauréats. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
