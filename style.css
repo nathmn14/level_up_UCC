@@ -95,11 +95,19 @@ h2::after{content:'';display:block;width:80px;height:4px;background:#ff9800;marg
 .faq-item p{display:none;}
 .faq-item.open p{display:block;}
 
+/* Partenaire officiel */
+.partner .partner-content{display:flex;flex-direction:column;align-items:center;gap:16px;max-width:820px;margin:0 auto;background:#fff;padding:24px;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.partner-logo{width:min(260px, 70vw);height:auto;object-fit:contain;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.partner-name{font-size:1.4rem;font-weight:700;color:#333}
+
 /* Contact */
 #contact p{margin:10px 0;font-size:1.1rem;}
 
 /* Footer */
 footer{background:#222;color:white;text-align:center;padding:30px;font-size:0.95rem;}
+footer a{color:#ff9800;text-decoration:none;font-weight:600}
+footer a:hover, footer a:focus{color:#ffad33;text-decoration:underline;outline:none}
+.site-credit{opacity:0.9;margin-top:8px}
 
 /* Animations */
 @keyframes fadeInDown{0%{opacity:0;transform:translateY(-40px);}100%{opacity:1;transform:translateY(0);}}

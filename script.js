@@ -56,8 +56,25 @@
     document.body.style.overflow='';
     if(burger) burger.setAttribute('aria-expanded','false');
   }
+  // Menu event listeners
   if(burger) burger.addEventListener('click', openMenu);
   if(closeBtn) closeBtn.addEventListener('click', closeMenu);
   if(backdrop) backdrop.addEventListener('click', closeMenu);
-  links.forEach(a=> a.addEventListener('click', ()=> closeMenu()));
+  
+  // Handle mobile menu link clicks
+  document.querySelectorAll('.mobile-menu a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeMenu();
+      
+      // Smooth scroll to target section
+      const targetId = link.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }, 300); // Small delay to allow menu to close
+      }
+    });
+  });
   
