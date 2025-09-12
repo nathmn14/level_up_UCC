@@ -114,6 +114,15 @@ img{max-width:100%;display:block}
 .partners{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .pill{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid rgba(2,6,23,.08);background:linear-gradient(135deg, rgba(139,92,246,.10), rgba(56,189,248,.10));color:#0f172a;font-weight:700}
 
+/* Partner highlight */
+.partner-highlight {
+  border: 3px solid #f39c12;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(243, 156, 18, 0.7);
+  display: inline-block;
+}
+
 /* Info grid */
 .info-grid{margin-top:18px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .info{background:linear-gradient(180deg, var(--surface), rgba(255,255,255,.98));border:1px solid rgba(2,6,23,.08);border-radius:var(--radius-sm);padding:16px}
