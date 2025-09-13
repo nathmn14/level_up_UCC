@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King Service - Partenaire Officiel</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #fff8e1, #fff3cd);
+        overflow-x: hidden;
+        text-align: center;
+      }
+
+      .logo {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #ff9800;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        animation: fadeDown 1s ease forwards;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 28px;
+        max-width: 480px;
+        line-height: 1.5;
+        animation: fadeDown 1.3s ease forwards;
+      }
+
+      .partner-img {
+        max-width: 340px;
+        width: 90%;
+        border-radius: 20px;
+        box-shadow: 0 12px 40px rgba(255, 152, 0, 0.25);
+        background: #fff;
+        padding: 14px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeUp 1.2s ease forwards;
+      }
+      .partner-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 16px 50px rgba(255, 152, 0, 0.35);
+      }
+
+      .caption {
+        margin-top: 16px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444;
+        animation: fadeUp 1.5s ease forwards;
+      }
+
+      /* Animations */
+      @keyframes fadeDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">🎓 Célébration des grades académiques 2025</div>
+    <div class="subtitle">
+      Un moment unique pour honorer nos lauréats, avec le soutien de notre
+      partenaire officiel.
+    </div>
+    <img
+      src="assets/img/partenaire.png"
+      alt="Partenaire officiel King Service"
+      class="partner-img"
+    />
+    <div class="caption">🤝 Partenaire Officiel – King Service</div>
+  </body>
+</html>
